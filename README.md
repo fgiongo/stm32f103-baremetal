@@ -11,9 +11,9 @@ navigate to the repository directory and run make:
 
 
 ```
-git clone https://github.com/fgiongo/stm32f103-baremetal
-cd stm32f103-baremetal
-make
+git clone https://github.com/fgiongo/stm32f103-baremetal \
+&& cd stm32f103-baremetal \
+&& make
 ```
 
 ### Flash instructions
@@ -24,6 +24,6 @@ To flash (via an USB to UART adapter), install stm32flash and run the flashing
 script:
 
 ```
-sudo apt-get install -y stm32flash```
-sudo make flash
+sudo apt-get install -y stm32flash \
+&& sudo make flash
 ```
