@@ -32,7 +32,6 @@ int main (void)
 
     // Configurar GPIOC13 para OUTPUT em 2MHz, OPEN-DRAIN
     volatile uint32_t *gpioc_config_high = (uint32_t *) (GPIOC_BASE + GPIO_CON_REG_H);
-    *gpioc_config_high &= ~GPIO_CONFIG;
     *gpioc_config_high |= GPIO_CONFIG;
 
     // Endereço do registrador de OUTPUT do pino GPIO C13
