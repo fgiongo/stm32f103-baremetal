@@ -6,12 +6,13 @@ Bare-metal programming for the stm32f103xx series microcontrollers.
 
 #### Debian Linux:
 
-To build the flashable binary, on the command line, clone this repository,
-navigate to the repository directory and run make:
-
+To build the flashable binary, install arm-none-eabi-gcc, clone this
+repository, navigate to the repository directory and run make. Or copy and
+paste the following commands on your terminal:
 
 ```
-git clone https://github.com/fgiongo/stm32f103-baremetal \
+sudo apt-get install -y gcc-arm-none-eabi \
+&& git clone https://github.com/fgiongo/stm32f103-baremetal \
 && cd stm32f103-baremetal \
 && make
 ```
